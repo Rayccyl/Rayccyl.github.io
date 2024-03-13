@@ -19,7 +19,7 @@
 <meta property="og:description" content="采取面板数据还是截面数据考虑到每年的宏微观数据结构不统一，故决定不使用面板数据 近日文献阅读所要解决的问题 别人的论文中 有哪些相关性方法 如何做相关性研究（单一产出 筛多投入 还是多产出筛多投入） 我们的第一步骤 叫相关性分析还是系统分析似乎就叫降维处理 在评价单个产业时，如何选取投入产出指标 相似论文是否热衷于给各单位排名？还是给出建议更重要？  更新数据-&gt;降维处理-&gt;[GRA公">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-05T12:54:28.000Z">
-<meta property="article:modified_time" content="2024-02-06T17:08:46.992Z">
+<meta property="article:modified_time" content="2024-02-22T10:03:38.836Z">
 <meta property="article:author" content="趋虞平雷">
 <meta property="article:tag" content="大创">
 <meta name="twitter:card" content="summary">
@@ -244,7 +244,20 @@
 <li>网络DEA是一种较为好的思路 但是否过于庞杂 以至于我们没有能力？</li>
 </ol>
 <h2 id="产出指标选取"><a href="#产出指标选取" class="headerlink" title="产出指标选取"></a>产出指标选取</h2><p>我们关注单一产业分析类的论文（因为我们就属于这一类 单一分析信息安全产业）<br>[5]净利润、主营业务收入、每股收益<br>产值、税收值、增加值</p>
-<h1 id="实践化研究"><a href="#实践化研究" class="headerlink" title="实践化研究"></a>实践化研究</h1><h2 id="1-GRA筛指标"><a href="#1-GRA筛指标" class="headerlink" title="1.GRA筛指标"></a>1.GRA筛指标</h2><p>筛指标，即把与产出不相关的指标去除。</p>
+<h1 id="24-02-22总结"><a href="#24-02-22总结" class="headerlink" title="24-02-22总结"></a>24-02-22总结</h1><ol>
+<li><p>决定采用2022截面数据进行计算，因为2019年 2018年工信部全行业数据缺失，2022年“采用信息化管理的企业”数据缺失，无法进行科学的面板分析</p>
+</li>
+<li><p>我们已用随机森林算法计算空缺值 但尚未进行测试集检验</p>
+</li>
+<li><p>决定使用先弹性网回归再因子分析的办法  进行数据降维   </p>
+</li>
+<li><p>联合GRA和DEA方法评价效率研究文献综述_许迪 是否合理？</p>
+</li>
+<li><p>决定宏微观独立筛选指标再做整合  </p>
+</li>
+<li><p>决定先全长core 找出core部分的重要变量后 再加上左部分</p>
+</li>
+</ol>
 <hr>
 <p>可参阅文献《联合GRA和DEA方法评价效率研究文献综述_许迪.pdf》本(大创)团队成员请创建Zatero账号并告诉我账号 以便我把你拉进Zotero群组 以快速阅览本文献</p>
 <hr>
@@ -317,7 +330,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%87%87%E5%8F%96%E9%9D%A2%E6%9D%BF%E6%95%B0%E6%8D%AE%E8%BF%98%E6%98%AF%E6%88%AA%E9%9D%A2%E6%95%B0%E6%8D%AE"><span class="nav-number">1.</span> <span class="nav-text">采取面板数据还是截面数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%91%E6%97%A5%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E6%89%80%E8%A6%81%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">近日文献阅读所要解决的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%99%8D%E7%BB%B4%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">常见降维处理方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DEA-GRA%E8%81%94%E5%90%88%E7%A0%94%E7%A9%B6%E7%9A%84%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0"><span class="nav-number">4.</span> <span class="nav-text">DEA-GRA联合研究的文献综述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%95%E7%BA%AFDEA%E6%96%87%E7%8C%AE%E7%A0%94%E7%A9%B6"><span class="nav-number">5.</span> <span class="nav-text">单纯DEA文献研究</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A7%E5%87%BA%E6%8C%87%E6%A0%87%E9%80%89%E5%8F%96"><span class="nav-number">5.1.</span> <span class="nav-text">产出指标选取</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9E%E8%B7%B5%E5%8C%96%E7%A0%94%E7%A9%B6"><span class="nav-number">6.</span> <span class="nav-text">实践化研究</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-GRA%E7%AD%9B%E6%8C%87%E6%A0%87"><span class="nav-number">6.1.</span> <span class="nav-text">1.GRA筛指标</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%87%87%E5%8F%96%E9%9D%A2%E6%9D%BF%E6%95%B0%E6%8D%AE%E8%BF%98%E6%98%AF%E6%88%AA%E9%9D%A2%E6%95%B0%E6%8D%AE"><span class="nav-number">1.</span> <span class="nav-text">采取面板数据还是截面数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%91%E6%97%A5%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E6%89%80%E8%A6%81%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">近日文献阅读所要解决的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%99%8D%E7%BB%B4%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">常见降维处理方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DEA-GRA%E8%81%94%E5%90%88%E7%A0%94%E7%A9%B6%E7%9A%84%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0"><span class="nav-number">4.</span> <span class="nav-text">DEA-GRA联合研究的文献综述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%95%E7%BA%AFDEA%E6%96%87%E7%8C%AE%E7%A0%94%E7%A9%B6"><span class="nav-number">5.</span> <span class="nav-text">单纯DEA文献研究</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A7%E5%87%BA%E6%8C%87%E6%A0%87%E9%80%89%E5%8F%96"><span class="nav-number">5.1.</span> <span class="nav-text">产出指标选取</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#24-02-22%E6%80%BB%E7%BB%93"><span class="nav-number">6.</span> <span class="nav-text">24-02-22总结</span></a></li></ol>
     
     </div>
   </aside>
