@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>erp chapter 5 能力需求计划 | 信息管理与数学学院 学业智力支持委员会</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="ERP" />
+  
+  
+  
+  
+  <meta name="description" content="CRP的概念CRP（capacity requirement planning）能力需求计划，是一种将MRP输出的对物料的分时段需求计划转变成对企业各个工作中心的分时段需求计划的管理工具，是一种协调能力需求与可用能力之间平衡管理的处理过程，是一种协调MRP的计划内容和确保MRP在现有生产环境中可行、有效的计划管理方法。 CRP的主要作用平衡能力供给和能力需求之间的关系  从工作能力看，CRP起到一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ERP Chapter 5 能力需求计划">
+<meta property="og:url" content="https://rayccyl.github.io/2024/10/21/ERP-Chapter-5-%E8%83%BD%E5%8A%9B%E9%9C%80%E6%B1%82%E8%AE%A1%E5%88%92/index.html">
+<meta property="og:site_name" content="信息管理与数学学院 学业智力支持委员会">
+<meta property="og:description" content="CRP的概念CRP（capacity requirement planning）能力需求计划，是一种将MRP输出的对物料的分时段需求计划转变成对企业各个工作中心的分时段需求计划的管理工具，是一种协调能力需求与可用能力之间平衡管理的处理过程，是一种协调MRP的计划内容和确保MRP在现有生产环境中可行、有效的计划管理方法。 CRP的主要作用平衡能力供给和能力需求之间的关系  从工作能力看，CRP起到一">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/Rayccyl/picx-images-hosting/refs/heads/master/CRP%25E4%25BD%259C%25E7%2594%25A8%25E7%25A4%25BA%25E6%2584%258F%25E5%259B%25BE.png">
+<meta property="article:published_time" content="2024-10-21T10:46:27.000Z">
+<meta property="article:modified_time" content="2024-10-29T13:20:06.663Z">
+<meta property="article:author" content="趋虞平雷">
+<meta property="article:tag" content="ERP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Rayccyl/picx-images-hosting/refs/heads/master/CRP%25E4%25BD%259C%25E7%2594%25A8%25E7%25A4%25BA%25E6%2584%258F%25E5%259B%25BE.png">
+  
+    <link rel="alternate" href="/atom.xml" title="信息管理与数学学院 学业智力支持委员会" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/css/images/icon.ico">
+  <link rel="apple-touch-icon" href="/css/images/icon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt; src:url("/css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("/css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("/css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+  
+<script src="/js/bootstrap.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+
+  
+    
+<link rel="stylesheet" href="/css/dialog.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
+  
+
+  
+  
+  
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="124px" height="124px" alt="Hike News" src="/css/images/icon.ico">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">首页</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">归档</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">分类</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">标签</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/first-page/index">关于</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-ERP-Chapter-5-能力需求计划" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      ERP Chapter 5 能力需求计划
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2024/10/21/ERP-Chapter-5-%E8%83%BD%E5%8A%9B%E9%9C%80%E6%B1%82%E8%AE%A1%E5%88%92/" class="article-date">
+	  <time datetime="2024-10-21T10:46:27.000Z" itemprop="datePublished">2024-10-21</time>
+	</a>
+
+      
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		阅读量<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CRP的概念"><a href="#CRP的概念" class="headerlink" title="CRP的概念"></a>CRP的概念</h1><p>CRP（capacity requirement planning）能力需求计划，是一种将MRP输出的对物料的分时段需求计划转变成对企业各个工作中心的分时段需求计划的管理工具，是一种协调能力需求与可用能力之间平衡管理的处理过程，是一种协调MRP的计划内容和确保MRP在现有生产环境中可行、有效的计划管理方法。</p>
+<h1 id="CRP的主要作用"><a href="#CRP的主要作用" class="headerlink" title="CRP的主要作用"></a>CRP的主要作用</h1><p><strong>平衡能力供给和能力需求之间的关系</strong></p>
+<ol>
+<li>从工作能力看，CRP起到一个计划转换器的作用</li>
+<li>从处理过程看，CRP把物料的需求计划转化为对工作中心的能力需求计划，并协调和处理有关这些这些能力的能力需求与可用能力之间的矛盾。</li>
+<li>从管理手段来看，CRP作为一种约束条件的测试工具，以检验和确保MRP负荷生产环境现状。</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Rayccyl/picx-images-hosting/refs/heads/master/CRP%25E4%25BD%259C%25E7%2594%25A8%25E7%25A4%25BA%25E6%2584%258F%25E5%259B%25BE.png"><br>来自MRP的生产作业表示计划负荷，工艺路线可以提供单位负荷耗用能力标准，这二者形成对工作中心的能力需求。工作中心提供企业在当前环境下的可用能力。<strong>CRP将能力需求和可用能力转化为可行的生产作业计划与已平衡的能力需求计划</strong></p>
+<h1 id="CRP与RCCP的区别与联系"><a href="#CRP与RCCP的区别与联系" class="headerlink" title="CRP与RCCP的区别与联系"></a>CRP与RCCP的区别与联系</h1><p>从计划层次看，RCCP与MPS同层，在需求计划的高层；CRP与MRP同层，位于需求计划的较低层次。<br>从内容上看，二者都是能力需求计划，都用于校验计划是否可行。RCCP校验MPS,CRP校验MRP，CRP是对RCCP的进一步细化。<br>从编制方式看，RCCP仅考虑关键工件中心的能力需求，其计算过程主要是依据资源清单；CRP考虑所有工件中心的能力需求，其计算过程是工艺路线。<br>总结其区别如下表：</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">RCCP</th>
+<th align="center">CRP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">计划阶段</td>
+<td align="center">MPS</td>
+<td align="center">MRP与生产作业计划</td>
+</tr>
+<tr>
+<td align="center">主要作用</td>
+<td align="center">检验MPS是否可行</td>
+<td align="center">检验生产作业计划是否可行</td>
+</tr>
+<tr>
+<td align="center">能力对象</td>
+<td align="center">关键工作中心</td>
+<td align="center">全部工作中心</td>
+</tr>
+<tr>
+<td align="center">计算过程依据</td>
+<td align="center">资源清单</td>
+<td align="center">工艺路线</td>
+</tr>
+<tr>
+<td align="center">负荷对象</td>
+<td align="center">独立需求件</td>
+<td align="center">相关需求件</td>
+</tr>
+<tr>
+<td align="center">库存状况</td>
+<td align="center">不考虑</td>
+<td align="center">考虑</td>
+</tr>
+<tr>
+<td align="center">订单类型</td>
+<td align="center">计划和确认订单</td>
+<td align="center">计划和确认订单、已下达订单</td>
+</tr>
+<tr>
+<td align="center">工作日历</td>
+<td align="center">工厂日历或工作中心日历</td>
+<td align="center">工作中心日历</td>
+</tr>
+<tr>
+<td align="center">提前期</td>
+<td align="center">提前期偏置</td>
+<td align="center">按工序的开始时间与完工时间</td>
+</tr>
+</tbody></table>
+<h1 id="分析比较无限能力计划与有限能力计划"><a href="#分析比较无限能力计划与有限能力计划" class="headerlink" title="分析比较无限能力计划与有限能力计划"></a>分析比较无限能力计划与有限能力计划</h1><p>二者的主要区别在于处理超负荷时采取的方式不同<br><strong>无限能力计划是不考虑能力限制的CRP方式</strong>，工作中心的负荷是所有消耗该工作中心的负荷的相加。当工作中心处于超负荷状态时，工作中心可以采取<strong>增加能力工时措施</strong>或<strong>采取调度手段</strong><br><strong>有限能力计划是考虑能力限制的CRP方式</strong>，考虑能力限制时，不会出现超负荷状态。有限能力计划中，有优先级计划和有限顺排计划。其中优先级计划，根据订单情况为计划负荷指定优先级，按照计划负荷的优先级为工作中心分配计划负荷。</p>
+<h1 id="CRP的输入包括哪些数据？这些数据的特点？"><a href="#CRP的输入包括哪些数据？这些数据的特点？" class="headerlink" title="CRP的输入包括哪些数据？这些数据的特点？"></a>CRP的输入包括哪些数据？这些数据的特点？</h1><h2 id="加工订单数据"><a href="#加工订单数据" class="headerlink" title="加工订单数据"></a>加工订单数据</h2><p><strong>加工订单描述了工作中心负荷的来源，包括物料加工数量、完成日期、加工工序、准备时间、加工时间等</strong>，计划订单是根据MRP直接计算的；计划订单经过修正后成为确认订单；已下达订单状态是生产作业计划的真实状态。</p>
+<h2 id="工艺路线数据"><a href="#工艺路线数据" class="headerlink" title="工艺路线数据"></a>工艺路线数据</h2><p>工艺路线描述物料加工装配所需要的工序步骤、每一步所需的工作中心、加工工具、加工定额工时等。<strong>工序路线把来自于加工订单的负荷转变为对加工中心的能力需求</strong></p>
+<h2 id="工作中心数据"><a href="#工作中心数据" class="headerlink" title="工作中心数据"></a>工作中心数据</h2><p><strong>是CRP的核心数据与能力单元，包括每天班次、每班工作小时数、每班人数、每班设备数、加工效率、设备利用率等</strong>，工作中心将作业工作与组织架构、人力资源等连接起来。</p>
+<h2 id="日期数据"><a href="#日期数据" class="headerlink" title="日期数据"></a>日期数据</h2><p>主要是制造日历、工厂日历、工作中心日历。制造日历应用于整个企业；工厂日历考虑到不同时间的工作时间、班次；工作中心日历提供精细化管理，根据各工作中心的实际来安排工厂日历。</p>
+<h1 id="CRP处理过程中的关键环节"><a href="#CRP处理过程中的关键环节" class="headerlink" title="CRP处理过程中的关键环节"></a>CRP处理过程中的关键环节</h1><h2 id="1-计算工作中心可用能力"><a href="#1-计算工作中心可用能力" class="headerlink" title="1.计算工作中心可用能力"></a>1.计算工作中心可用能力</h2><p>可用能力包括能力单位、能力类型、额定能力<br>主要要计算的的是额定能力，定义效率、利用率如下：<br>$$利用率&#x3D;\frac{实际投入工时}{计划工时}$$<br>$$效率&#x3D;\frac{加工额定工时\times已完成的物料数量}{实际投入工时}$$<br>则有额定能力可表示如下<br>$$额定能力&#x3D;单个设备每日可用工时数\times可用设备数\times利用率\times效率$$<br>$$额定能力&#x3D;每人每日可用工时数\times有效人数\times利用率\times效率$$<br>若使用设备工时描述能力，则用前一项公式；若使用人员工时描述能力，则用前一项公式。<strong>此之谓能力类型</strong><br>能力单位可以用加工单料所需要的时间或单位时间产量</p>
+<h2 id="2-计算工作中心上的工作负荷"><a href="#2-计算工作中心上的工作负荷" class="headerlink" title="2.计算工作中心上的工作负荷"></a>2.计算工作中心上的工作负荷</h2><p>计算工作中心上的工序负荷<br>$$工序负荷&#x3D;准备时间+加工物料数量\times加工时间$$<br>（计算时需统一时间单位为小时）</p>
+<h2 id="3-计算工作中心的分时段能力需求"><a href="#3-计算工作中心的分时段能力需求" class="headerlink" title="3.计算工作中心的分时段能力需求"></a>3.计算工作中心的分时段能力需求</h2><p>需要计算每一个工序在每一个工作中心上的结束时间与开始时间；也需要计算以工作中心为基础，按时段汇总所有工序的能力需求。<br>根据工序要求结束时间，并依照等待时间、移动时间、排队时间、准备时间、加工时间等计算出工序开工时间。根据MPS得到计划工作量，根据计划工作量得到各工作中心各工件在各时段的能力负荷，最后得到各工作中心的能力需求计划表（各工作中心分时段能力负荷之和）</p>
+<h1 id="CRP的计算过程"><a href="#CRP的计算过程" class="headerlink" title="CRP的计算过程"></a>CRP的计算过程</h1>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      <div>
+        <ul class="post-copyright">
+          <li class="post-copyright-author">
+          <strong>本文作者:  </strong>趋虞平雷</a>
+          </li>
+          <li class="post-copyright-link">
+          <strong>本文链接:  </strong>
+          <a href="/2024/10/21/ERP-Chapter-5-能力需求计划/" target="_blank" title="ERP Chapter 5 能力需求计划">https://rayccyl.github.io/2024/10/21/ERP-Chapter-5-能力需求计划/</a>
+          </li>
+          <li class="post-copyright-license">
+            <strong>版权声明:   </strong>
+            本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+            许可协议。转载请注明出处
+          </li>
+         
+        </ul>
+<div>
+
+      
+      
+      
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ERP/" rel="tag">ERP</a></li></ul>
+
+      
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2024/10/14/ERP-midterm/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">ERP-midterm</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CRP%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">CRP的概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CRP%E7%9A%84%E4%B8%BB%E8%A6%81%E4%BD%9C%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">CRP的主要作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CRP%E4%B8%8ERCCP%E7%9A%84%E5%8C%BA%E5%88%AB%E4%B8%8E%E8%81%94%E7%B3%BB"><span class="nav-number">3.</span> <span class="nav-text">CRP与RCCP的区别与联系</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E6%AF%94%E8%BE%83%E6%97%A0%E9%99%90%E8%83%BD%E5%8A%9B%E8%AE%A1%E5%88%92%E4%B8%8E%E6%9C%89%E9%99%90%E8%83%BD%E5%8A%9B%E8%AE%A1%E5%88%92"><span class="nav-number">4.</span> <span class="nav-text">分析比较无限能力计划与有限能力计划</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CRP%E7%9A%84%E8%BE%93%E5%85%A5%E5%8C%85%E6%8B%AC%E5%93%AA%E4%BA%9B%E6%95%B0%E6%8D%AE%EF%BC%9F%E8%BF%99%E4%BA%9B%E6%95%B0%E6%8D%AE%E7%9A%84%E7%89%B9%E7%82%B9%EF%BC%9F"><span class="nav-number">5.</span> <span class="nav-text">CRP的输入包括哪些数据？这些数据的特点？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A0%E5%B7%A5%E8%AE%A2%E5%8D%95%E6%95%B0%E6%8D%AE"><span class="nav-number">5.1.</span> <span class="nav-text">加工订单数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E8%89%BA%E8%B7%AF%E7%BA%BF%E6%95%B0%E6%8D%AE"><span class="nav-number">5.2.</span> <span class="nav-text">工艺路线数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%BF%83%E6%95%B0%E6%8D%AE"><span class="nav-number">5.3.</span> <span class="nav-text">工作中心数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%E6%95%B0%E6%8D%AE"><span class="nav-number">5.4.</span> <span class="nav-text">日期数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CRP%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E7%8E%AF%E8%8A%82"><span class="nav-number">6.</span> <span class="nav-text">CRP处理过程中的关键环节</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E8%AE%A1%E7%AE%97%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%BF%83%E5%8F%AF%E7%94%A8%E8%83%BD%E5%8A%9B"><span class="nav-number">6.1.</span> <span class="nav-text">1.计算工作中心可用能力</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%AE%A1%E7%AE%97%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%BF%83%E4%B8%8A%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%B4%9F%E8%8D%B7"><span class="nav-number">6.2.</span> <span class="nav-text">2.计算工作中心上的工作负荷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E8%AE%A1%E7%AE%97%E5%B7%A5%E4%BD%9C%E4%B8%AD%E5%BF%83%E7%9A%84%E5%88%86%E6%97%B6%E6%AE%B5%E8%83%BD%E5%8A%9B%E9%9C%80%E6%B1%82"><span class="nav-number">6.3.</span> <span class="nav-text">3.计算工作中心的分时段能力需求</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CRP%E7%9A%84%E8%AE%A1%E7%AE%97%E8%BF%87%E7%A8%8B"><span class="nav-number">7.</span> <span class="nav-text">CRP的计算过程</span></a></li></ol>
+    
+    </div>
+  </aside>
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2024 - 2024 信息管理与数学学院 学业智力支持委员会 All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				访客数 : <span id="busuanzi_value_site_uv"></span> |  
+				访问量 : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/first-page/index" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+
+
+
+  
+<script src="/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            信息管理与数学学院 学业智力支持委员会
+          </div>
+          <div class="panel-body">
+            Copyright © 2024 趋虞平雷 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
+  
+</body>
+</html>
